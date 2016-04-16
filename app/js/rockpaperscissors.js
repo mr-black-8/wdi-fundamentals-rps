@@ -102,10 +102,12 @@ function playToFive() {
 
         if(gameWinner === 'player') {
             playerWins += 1;
+            console.log("Player's " + playerMove + " defeats computer's " + computerMove)
             console.log("Player wins this round!");
             console.log("Current score: Player " + playerWins + " Computer: " + computerWins);
         } else if (gameWinner ==='computer') {
             computerWins += 1
+            console.log("Computer's " + computerMove + " defeats player's " + playerMove)
             console.log("Computer wins this round!");
             console.log("Current score: Player " + playerWins + " Computer: " + computerWins);
         } else if (gameWinner === 'tie') {
